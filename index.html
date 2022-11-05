@@ -8,10 +8,43 @@
     <title>Calculator</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/style.css">
+    <!-- Font Awesome css -->
+    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.min.css" />
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="calc-container">
+            <div class="heading-container">
+                <h2>Calculator</h2>
+                <i class="fa-solid fa-sun" id="themechanger-icon" onclick="themeChange()"></i>
+            </div>
+            <input type="text" class="input-text" placeholder="0">
+            <input type="text" readonly>
+            <div class="buttons-list">
+                <button class="blue-text"><i class="fa-solid fa-c"></i></button>
+                <button class="blue-text"><i class="fa-solid fa-plus-minus"></i></button>
+                <button class="blue-text"><i class="fa-solid fa-percent"></i></button>
+                <button class="red-text "><i class="fa-solid fa-divide"></i></button>
+                <button><i class="fa-solid fa-7"></i></button>
+                <button><i class="fa-solid fa-8"></i></button>
+                <button><i class="fa-solid fa-9"></i></button>
+                <button class="red-text "><i class="fa-solid fa-xmark"></i></button>
+                <button><i class="fa-solid fa-4"></i></button>
+                <button><i class="fa-solid fa-5"></i></button>
+                <button><i class="fa-solid fa-6"></i></button>
+                <button class="red-text "><i class="fa-solid fa-minus"></i></button>
+                <button><i class="fa-solid fa-1"></i></button>
+                <button><i class="fa-solid fa-2"></i></button>
+                <button><i class="fa-solid fa-3"></i></button>
+                <button class="red-text "><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i></button>
+                <button><i class="fa-solid fa-0"></i></button>
+                <button>&bull;</button>
+                <button class="red-text "><i class="fa-solid fa-equals"></i></button>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="/script.js"></script>
