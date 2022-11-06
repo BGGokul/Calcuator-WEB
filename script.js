@@ -1,6 +1,6 @@
 // Theme changing function
 
-function themeChange() {
+themeChange = () => {
   let className = document.getElementById("themechanger-icon").classList;
   if (className[1] == "fa-sun") {
     document.getElementsByClassName("calc-container")[0].style.background =
@@ -45,4 +45,34 @@ function themeChange() {
       buttonList[i].style.color = "#ffffff";
     }
   }
-}
+};
+
+var inputBox = document.getElementById("calcInput");
+let resultBox = document.getElementById("resultBox");
+
+// Display number when click button
+dislayText = (val) => {
+  inputBox.value += val;
+  // resultBox.value = eval(inputBox.value);
+};
+
+//clear input box
+clearAll = () => {
+  document.getElementById("calcInput").value = "";
+};
+//result
+result = () => {
+  document.getElementById("resultBox").value = eval(inputBox.value);
+};
+
+//key restriction
+$(".number-only").keypress(function (e) {
+  if (
+    (e.which >= 48 && e.which <= 57) ||
+    e.which == 187 ||
+    e.which == 189 ||
+    e.which == 191
+  ) {
+    return true;
+  } else e.preventDefault();
+});

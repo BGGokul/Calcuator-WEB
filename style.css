@@ -59,6 +59,12 @@
     font-size: 13px;
 }
 
+.ac-button {
+    display: flex !important;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
 input {
     height: 50px;
     width: 100%;
@@ -70,9 +76,16 @@ input {
 .input-text {
     text-align: end;
     caret-color: #ffffff;
-    font-size: 40px;
-    height: 22%;
+    font-size: 30px;
+    height: 20%;
     color: #ffffff;
+}
+
+#resultBox {
+    text-align: end;
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 1rem;
 }
 
 .heading-container {
@@ -135,7 +148,7 @@ input {
 @media (min-width: 1200px) {
     .calc-container {
         width: 22%;
-        height: 80%
+        height: 90%
     }
 }
 
@@ -143,6 +156,6 @@ input {
 @media (min-width: 1400px) {
     .calc-container {
         width: 22%;
-        height: 80%
+        height: 90%
     }
 }
