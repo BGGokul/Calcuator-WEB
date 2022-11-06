@@ -110,6 +110,7 @@ input {
 @media (min-width: 576px) {
     .calc-container {
         width: 80%;
+        height: 80%;
     }
 }
 
@@ -117,6 +118,7 @@ input {
 @media (min-width: 768px) {
     .calc-container {
         width: 75%;
+        height: 85%
     }
 }
 
@@ -124,6 +126,7 @@ input {
 @media (min-width: 992px) {
     .calc-container {
         width: 22%;
+        height: 90%
     }
 }
 
@@ -132,6 +135,7 @@ input {
 @media (min-width: 1200px) {
     .calc-container {
         width: 22%;
+        height: 80%
     }
 }
 
@@ -139,5 +143,6 @@ input {
 @media (min-width: 1400px) {
     .calc-container {
         width: 22%;
+        height: 80%
     }
 }
