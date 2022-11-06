@@ -58,11 +58,19 @@ dislayText = (val) => {
 
 //clear input box
 clearAll = () => {
-  document.getElementById("calcInput").value = "";
+  inputBox.value = "";
 };
 //result
 result = () => {
-  document.getElementById("resultBox").value = eval(inputBox.value);
+  try {
+    resultBox.value = eval(inputBox.value);
+  } catch {
+    alert("invalid input");
+  }
+};
+
+clearText = () => {
+  inputBox.value = inputBox.value.slice(0, -1);
 };
 
 //key restriction

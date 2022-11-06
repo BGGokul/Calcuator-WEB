@@ -20,10 +20,10 @@
                 <i class="fa-solid fa-sun" id="themechanger-icon" onclick="themeChange()"></i>
             </div>
             <input type="text" class="input-text number-only" placeholder="0" id="calcInput">
-            <input type="text" readonly placeholder="result" id="resultBox">
+            <input type="text" readonly id="resultBox">
             <div class="buttons-list">
                 <button class="blue-text" onclick=clearAll()><i class="fa-solid fa-c ac-button">A</i></button>
-                <button class="blue-text" onclick="dislayText('-')"><i class="fa-solid fa-c"></i></button>
+                <button class="blue-text" onclick="clearText()"><i class="fa-solid fa-delete-left"></i></button>
                 <button class="blue-text" onclick="dislayText('-')"><i class="fa-solid fa-percent"></i></button>
                 <button class="red-text" onclick="dislayText('/')"><i class="fa-solid fa-divide"></i></button>
                 <button onclick="dislayText('7')"><i class="fa-solid fa-7"></i></button>
@@ -41,7 +41,7 @@
                 <button onclick="dislayText('00')"><i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i></button>
                 <button onclick="dislayText('0')"><i class="fa-solid fa-0"></i></button>
                 <button onclick="dislayText('.')">&bull;</button>
-                <button onclick="result()" class="red-text "><i class="fa-solid fa-equals"></i></button>
+                <button onclick="result()" class="red-text"><i class="fa-solid fa-equals"></i></button>
             </div>
         </div>
     </div>
